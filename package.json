@@ -5,7 +5,8 @@
   "scripts": {
     "build": "npx eleventy",
     "watch": "npx eleventy --watch",
-    "debug": "DEBUG=* npx eleventy"
+    "debug": "DEBUG=* npx eleventy",
+    "deploy": "gh-pages -d _site"
   },
   "repository": {
     "type": "git",
@@ -20,9 +21,10 @@
   "bugs": {
     "url": "https://github.com/danurbanowicz/eleventy-netlify-boilerplate/issues"
   },
-  "homepage": "https://github.com/danurbanowicz/eleventy-netlify-boilerplate",
+  "homepage": "/",
   "devDependencies": {
     "@11ty/eleventy": "^0.11.0-beta.1",
+    "gh-pages": "^2.2.0",
     "luxon": "^1.21.3",
     "markdown-it": "^10.0.0",
     "markdown-it-anchor": "^5.2.5"
